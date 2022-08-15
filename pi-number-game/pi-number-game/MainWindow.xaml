@@ -21,6 +21,7 @@
             <RowDefinition Height="110*"  />
         </Grid.RowDefinitions>
 
+        <!--Typing text box-->
         <Border Background="White" CornerRadius="15" Grid.Row="1" Grid.Column="1" Margin="0 120 0 100" >
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -50,9 +51,48 @@
 
         </Border>
 
+        <!--Stopwatch-->
         <TextBlock Name="Stopwatch" TextAlignment="Center" Text="00:00:00"
                 Visibility="Visible" VerticalAlignment="Center" FontWeight="Bold"
                 FontSize="30" Foreground="White" Grid.Column="1" Height="40" />
+
+        <!--Border for choosing range of pi number and enabling stopwatch-->
+        <Border x:Name="ChooseRangeBorder" Grid.Column="1" Grid.Row="1" 
+                Background="White" CornerRadius="15" Visibility="Hidden">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="63*"/>
+                    <ColumnDefinition Width="117*"/>
+                    <ColumnDefinition Width="18*"/>
+                    <ColumnDefinition Width="59*"/>
+                    <ColumnDefinition Width="180*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40*" />
+                    <RowDefinition Height="20*" />
+                    <RowDefinition Height="25*" />
+                    <RowDefinition Height="68*" />
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="26*" />
+                </Grid.RowDefinitions>
+            </Grid>
+        </Border>
+
+        <!--Buttons "Restart" and "Return"-->
+
+        <Button FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.Row="2" 
+                Content="Return" Foreground="White" VerticalAlignment="Top" 
+                Background="#009FB7" Visibility="Hidden" x:Name="ReturnButton" 
+                BorderBrush="{x:Null}" materialDesign:ButtonAssist.CornerRadius="10"
+                Margin="90 0 0 0"  HorizontalAlignment="Left" Width="150"/>
+        
+        <Button FontSize="14" FontWeight="Bold" Grid.Column="1" Grid.Row="2" 
+                Content="Restart" Foreground="White" VerticalAlignment="Top" 
+                Background="#FF0051B7" Visibility="Hidden" x:Name="RestartButton" 
+                BorderBrush="{x:Null}" materialDesign:ButtonAssist.CornerRadius="10"
+                Margin="0 0 90 0"  HorizontalAlignment="Right" Width="150"/>
+
 
     </Grid>
 </Window>
