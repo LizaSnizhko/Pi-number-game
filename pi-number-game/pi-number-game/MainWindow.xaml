@@ -112,6 +112,9 @@
                           FontSize="12" FontFamily="Cascadia Code"  Background="#9050b4" FontWeight="Bold" 
                           VerticalAlignment="Center" BorderBrush="#FF9050B4" materialDesign:CheckBoxAssist.CheckBoxSize="20"/>
 
+                <TextBlock x:Name="InvalidInputText" Text="*Invalid input"  FontSize="10" 
+                           FontWeight="Bold"  FontFamily="Cascadia Code"  Grid.Column="4" Grid.ColumnSpan="2"
+                           Grid.Row="2" VerticalAlignment="Bottom" Foreground="Red" Visibility="Hidden"/>
 
                 <Button FontSize="14" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="4" Content="Start" 
                         Foreground="White" VerticalAlignment="Center" Background="#FF009E71"
