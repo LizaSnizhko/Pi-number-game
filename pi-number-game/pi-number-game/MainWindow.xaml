@@ -80,6 +80,34 @@
                 <TextBlock Text="Number's range:" Grid.Column="1" Grid.ColumnSpan="3" 
                            Grid.Row="1"  FontSize="14" FontWeight="Bold" FontFamily="Cascadia Code"/>
                 
+                <Grid Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2">
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2.3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock FontSize="12" Text="from" HorizontalAlignment="Left" 
+                               VerticalAlignment="Bottom" Opacity="0.8"/>
+
+                    <TextBox x:Name="FromTextBox"  FontSize="15" 
+                        FontWeight="Bold" Grid.Column="1" VerticalContentAlignment="Bottom" 
+                             HorizontalContentAlignment="Center" BorderBrush="#FF7F10D1" 
+                             BorderThickness="0,0,0,2"  Padding="0,14,0,0" VerticalScrollBarVisibility="Disabled"/>
+
+                    <TextBlock FontSize="12" Text="to" HorizontalAlignment="Center" 
+                               VerticalAlignment="Bottom" Opacity="0.8" Grid.Column="2"/>
+
+
+                    <TextBox x:Name="ToTextBox"  FontSize="15" 
+                        FontWeight="Bold" Grid.Column="3" VerticalContentAlignment="Bottom" 
+                             HorizontalContentAlignment="Center" BorderBrush="#FF7F10D1" 
+                             BorderThickness="0,0,0,2"  Padding="0,14,0,0" VerticalScrollBarVisibility="Disabled"/>
+
+                </Grid>
+                
                 <Button FontSize="14" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="4" Content="Start" 
                         Foreground="White" VerticalAlignment="Center" Background="#FF009E71"
                         BorderBrush="#FF267961" materialDesign:ButtonAssist.CornerRadius="15" >
