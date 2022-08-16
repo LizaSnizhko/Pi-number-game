@@ -107,7 +107,12 @@
                              BorderThickness="0,0,0,2"  Padding="0,14,0,0" VerticalScrollBarVisibility="Disabled"/>
 
                 </Grid>
-                
+
+                <CheckBox x:Name="StopwatchCheckBox" Content=" Add stopwatch" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" 
+                          FontSize="12" FontFamily="Cascadia Code"  Background="#9050b4" FontWeight="Bold" 
+                          VerticalAlignment="Center" BorderBrush="#FF9050B4" materialDesign:CheckBoxAssist.CheckBoxSize="20"/>
+
+
                 <Button FontSize="14" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="4" Content="Start" 
                         Foreground="White" VerticalAlignment="Center" Background="#FF009E71"
                         BorderBrush="#FF267961" materialDesign:ButtonAssist.CornerRadius="15" >
