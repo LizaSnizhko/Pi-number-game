@@ -1,4 +1,4 @@
-﻿<Window x:Class="pi_number_game.MainWindow"
+﻿<Window x:Class="pi_number_game.MainWindow"        
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -58,7 +58,7 @@
         </Border>
 
         <!--Stopwatch-->
-        <TextBlock Name="Stopwatch" TextAlignment="Center" Text="00:00:00"
+        <TextBlock Name="StopwatchBlock" TextAlignment="Center" Text="00:00:00"
                 Visibility="Hidden" VerticalAlignment="Center" FontWeight="Bold"
                 FontSize="30" Foreground="White" Grid.Column="1" Height="40" />
 
