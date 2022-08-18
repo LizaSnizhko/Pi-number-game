@@ -5,7 +5,7 @@ using System.Windows.Threading;
 
 namespace pi_number_game
 {
-    internal class StopwatchEvent
+    internal class StopwatchEvent : MainWindow
     {
         private DispatcherTimer timer;
         private Stopwatch stopWatch;
@@ -33,7 +33,7 @@ namespace pi_number_game
         public void Reset()
         {
             stopWatch.Reset();
-            //StopwatchBlock.Text = "00:00:00";
+            StopwatchBlock.Text = "00:00:00";
         }
         private void Tick(object sender, EventArgs e)
         {
@@ -42,7 +42,7 @@ namespace pi_number_game
                 TimeSpan ts = stopWatch.Elapsed;
                 currentTime = String.Format("{1:00}:{2:00}.{3:00}",
                     ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
-               // StopwatchBlock.Text = currentTime;
+                StopwatchBlock.Text = currentTime;
 
             }
         }
