@@ -59,8 +59,9 @@
 
         <!--Stopwatch-->
         <TextBlock Name="StopwatchBlock" TextAlignment="Center" Text="00:00:00"
-                Visibility="Hidden" VerticalAlignment="Center" FontWeight="Bold"
-                FontSize="30" Foreground="White" Grid.Column="1" Height="40" />
+                Visibility="Visible" VerticalAlignment="Center" FontWeight="Bold"
+                FontSize="30" Foreground="White" Grid.Column="1" Height="40" 
+                   x:FieldModifier="public" />
 
         <!--Border for choosing range of pi number and enabling stopwatch-->
         <Border x:Name="ChooseRangeBorder" Grid.Column="1" Grid.Row="1" 
@@ -96,12 +97,13 @@
                     </Grid.ColumnDefinitions>
                     
                     <TextBlock FontSize="12" Text="from" HorizontalAlignment="Left" 
-                               VerticalAlignment="Bottom" Opacity="0.8"/>
+                               VerticalAlignment="Bottom" Opacity="0.8" />
 
                     <TextBox x:Name="FromTextBox"  FontSize="15" 
                         FontWeight="Bold" Grid.Column="1" VerticalContentAlignment="Bottom" 
                              HorizontalContentAlignment="Center" BorderBrush="#FF7F10D1" 
-                             BorderThickness="0,0,0,2"  Padding="0,14,0,0" VerticalScrollBarVisibility="Disabled"/>
+                             BorderThickness="0,0,0,2"  Padding="0,14,0,0" VerticalScrollBarVisibility="Disabled"
+                             PreviewKeyDown="PreviewOnlyNumbersDown"/>
 
                     <TextBlock FontSize="12" Text="to" HorizontalAlignment="Center" 
                                VerticalAlignment="Bottom" Opacity="0.8" Grid.Column="2"/>
@@ -124,7 +126,8 @@
 
                 <Button FontSize="14" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="4" Content="Start" 
                         Foreground="White" VerticalAlignment="Center" Background="#FF009E71"
-                        BorderBrush="#FF267961" materialDesign:ButtonAssist.CornerRadius="15" >
+                        BorderBrush="#FF267961" materialDesign:ButtonAssist.CornerRadius="15" 
+                        Click="Button_Click">
 
                 </Button>
             </Grid>
